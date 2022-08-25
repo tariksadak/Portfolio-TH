@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+    <!-- les differents meta utilise-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- le style du site-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- utilisation de font awesome dans le site = 1-->
+    <script src="https://kit.fontawesome.com/c7d2032d52.js" crossorigin="anonymous"></script>
+
+
+    <!-- titre du site -->
+    <title>Tapissier Herbretais</title>
+</head>
+<body>
+  
+    <!-- Navbar du site -->
+    <header class="navbar">
+
+      <!-- Container nav-->
+        <nav class="navbar__container">
+
+          <!-- LOGO -->
+            <a href="#home" id="navbar__logo">Tapissier Herbretais</a>
+
+            <!-- button pour le responsive -->
+            <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+            </div>
+
+            <!-- liens cliquables-->
+            <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="#home" class="navbar__links" id="home-page">Accueil</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#project" class="navbar__links" id="project-page">Projets</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#skills" class="navbar__links" id="skill-page">Compétence</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#contact" class="navbar__links" id="contact-page">Contact</a>
+            </li>
+            </ul>
+          </nav>
+      </header>
+  
+
+
+  <main>
+    <!-- Home page du site -->
+    <div class="home" id="home">
+
+      <!-- home page container-->
+        <div class="home__container">
+
+          <!-- titre du home page-->
+            <h1 class="home__heading">De l'Art chez<span> Vous</span>.</h1>
+
+            <!-- description dans une div de style-->
+            <div class="catchPhrase">
+            <p class="home__description">Fabrication de canapés, chaises et autres...</p>
+            </div>
+
+            <!-- button partie suivante + class global buttons -->
+            <button class="main__btn"><a href="#project">Explorer</a></button>
+        </div>
+    </div>
+
+    <!-- projets du site -->
+    <div class="project" id="project">
+
+      <!-- titre h1-->
+        <h1>Mes Projets</h1>
+
+        <!-- liste des projets-->
+        <div class="project__wrapper">
+          <div class="project__card" id="project1"></div>
+          <div class="project__card" id="project2"></div>
+          <div class="project__card" id="project3"></div>
+          <div class="project__card" id="project4"></div>
+          <div class="project__card" id="project5"></div>
+          <div class="project__card" id="project6"></div>
+        </div>
+
+        <!-- REDIRECTION VERS L'AUTRE SITE-->
+        <button class="main__btn"><a href="#">Voir Plus</a></button>
+    </div>
+
+    <!-- Les competence -->
+    <div class="skills" id="skills">
+
+
+      <!-- container des competence-->
+        <div class="skills__container">
+
+          <!-- Container de l'image-->
+          <div class="skills__img--container">
+
+            <!-- l'image en carte-->
+            <div class="skills__img--card"><i class="fa-solid fa-couch"></i></div>
+          </div>
+
+
+          <!-- les competences-->
+          <div class="skills__content">
+            <h1>Mes Compétences</h1>
+            <h2>Expertise dans la manipulation du tissue, bois, montage etc..</h2>
+            
+
+            <!-- button redirection CV-->
+            <button class="main__btn"><a href="cv.pdf">Télécharger CV</a></button>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- Page contact de la page -->
+    <div class="contact" id="contact">
+        <h1>Me Contacter</h1>
+        <form action="Email.php" method="POST">   
+            <input name="name" type="text" class="feedback-input" placeholder="Nom" required/>   
+            <input name="email" type="text" class="feedback-input" placeholder="Email" required/>
+            <textarea name="text" class="feedback-input" placeholder="Message" required></textarea>
+            <input class="main__btn" type="submit" value="Envoyer"/>
+          </form>
+    </div>
+
+  </main>
+
+  <footer>
+
+
+        <!-- Le Footer du site -->
+        <div class="footer__container">
+
+
+        <!-- les liens dans le footer -->
+        <div class="footer__links">
+
+
+          <!-- wrapper 1 -->
+          <div class="footer__link--wrapper">
+
+            <!-- les items -->
+            <div class="footer__link--items">
+              <h2>Contact</h2>
+              <a href="mailto:tapissierherbretais@gmail.com">Par email</a> <a href="tel:+33695305587">+33695305587</a> 
+            </div>
+          </div>
+
+          <!-- wrapper 2 -->
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>Réseaux</h2>
+              <a href="/">Instagram</a> <a href="https://www.facebook.com/TapissierHerbretais/">Facebook</a>
+              <a href="https://api.whatsapp.com/send?phone=33695305587&text=Bonjour!">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- section reseaux sociaux et credit -->
+        <section class="social__media">
+          <div class="social__media--wrap">
+            <div class="footer__logo">
+              <a href="#home" > <img src="logo.png"></a>
+            </div>
+            <p class="website__rights">© Tapissier Herbretais 2022. Tous droits réservés</p>
+            <div class="social__icons">
+
+              <a href="https://www.facebook.com/TapissierHerbretais/" class="social__icon--link" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+
+              <a href="/" class="social__icon--link">
+                <i class="fab fa-instagram"></i>
+              </a>
+
+              <a href="https://api.whatsapp.com/send?phone=33695305587&text=Bonjour!" class="social__icon--link" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+
+            </div>
+          </div>
+        </section>
+        </div>
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="app.js"></script>
+</body>
+</html>
